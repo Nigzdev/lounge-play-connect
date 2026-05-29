@@ -4,15 +4,15 @@ import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_NUMBER, ADDRESS, MAPS_EMBED, HOURS }
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-24 px-5">
+    <section id="contact" className="relative py-16 sm:py-24 px-4 sm:px-5">
       <div className="max-w-6xl mx-auto">
         <SectionHeader eyebrow="Visit Us" title="Drop by or ring us up" />
-        <div className="mt-16 grid lg:grid-cols-2 gap-6">
+        <div className="mt-10 sm:mt-16 grid lg:grid-cols-2 gap-4 sm:gap-6">
           <div className="rounded-3xl overflow-hidden border border-border bg-card/40 p-2">
             <iframe
               src={MAPS_EMBED}
               title="Our location on Google Maps"
-              className="w-full h-[380px] rounded-2xl"
+              className="w-full h-[280px] sm:h-[380px] rounded-2xl"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
