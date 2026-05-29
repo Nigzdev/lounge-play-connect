@@ -18,10 +18,10 @@ const plans = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="relative py-24 px-5">
+    <section id="pricing" className="relative py-16 sm:py-24 px-4 sm:px-5">
       <div className="max-w-6xl mx-auto">
         <SectionHeader eyebrow="Pricing" title="Simple, hourly rates" subtitle="No hidden charges. Just pure play." />
-        <div className="mt-16 grid md:grid-cols-2 gap-6">
+        <div className="mt-10 sm:mt-16 grid md:grid-cols-2 gap-5 sm:gap-6">
           {plans.map((p) => (
             <div
               key={p.name}
