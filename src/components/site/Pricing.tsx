@@ -25,7 +25,7 @@ export function Pricing() {
           {plans.map((p) => (
             <div
               key={p.name}
-              className={`group relative rounded-2xl p-8 transition-all hover:-translate-y-2 ${
+              className={`group relative rounded-2xl p-6 sm:p-8 transition-all hover:-translate-y-2 ${
                 p.featured
                   ? "bg-[var(--gradient-card)] border border-[var(--neon-purple)]/40 shadow-[var(--shadow-glow-purple)]"
                   : "bg-card border border-border hover:border-[var(--neon-blue)]/50"
