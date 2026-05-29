@@ -10,11 +10,11 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section className="relative py-24 px-5 overflow-hidden">
+    <section className="relative py-16 sm:py-24 px-4 sm:px-5 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.65_0.28_300/0.08),transparent_60%)]" />
       <div className="relative max-w-6xl mx-auto">
         <SectionHeader eyebrow="Why Choose Us" title="More than just a cafe" />
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="mt-10 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {reasons.map((r) => (
             <div key={r.title} className="group text-center p-6 rounded-2xl border border-border bg-card/30 hover:bg-card transition-all hover:-translate-y-2">
               <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-neon grid place-items-center shadow-[var(--shadow-neon)] group-hover:scale-110 transition-transform">

@@ -11,11 +11,11 @@ const facilities = [
 
 export function Facilities() {
   return (
-    <section id="facilities" className="relative py-24 px-5">
+    <section id="facilities" className="relative py-16 sm:py-24 px-4 sm:px-5">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--neon-purple)]/40 to-transparent" />
       <div className="max-w-6xl mx-auto">
         <SectionHeader eyebrow="Facilities" title="Built for serious play" />
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {facilities.map((f, i) => (
             <div
               key={f.title}

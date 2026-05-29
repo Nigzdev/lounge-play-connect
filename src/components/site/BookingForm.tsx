@@ -37,14 +37,14 @@ export function BookingForm() {
   };
 
   return (
-    <section id="book" className="relative py-24 px-5">
+    <section id="book" className="relative py-16 sm:py-24 px-4 sm:px-5 pb-28 sm:pb-24">
       <div className="max-w-3xl mx-auto">
         <SectionHeader eyebrow="Booking" title="Reserve your slot" subtitle="Quick form — we'll confirm on WhatsApp." />
         <form
           onSubmit={onSubmit}
-          className="mt-12 rounded-3xl p-6 sm:p-10 bg-[var(--gradient-card)] border border-border backdrop-blur shadow-[var(--shadow-glow-purple)]"
+          className="mt-10 sm:mt-12 rounded-3xl p-5 sm:p-10 bg-[var(--gradient-card)] border border-border backdrop-blur shadow-[var(--shadow-glow-purple)]"
         >
-          <div className="grid sm:grid-cols-2 gap-5">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
             <Field label="Your Name">
               <input name="name" required maxLength={80} placeholder="John Doe" className={inputCls} />
             </Field>

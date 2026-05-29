@@ -18,14 +18,14 @@ const plans = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="relative py-24 px-5">
+    <section id="pricing" className="relative py-16 sm:py-24 px-4 sm:px-5">
       <div className="max-w-6xl mx-auto">
         <SectionHeader eyebrow="Pricing" title="Simple, hourly rates" subtitle="No hidden charges. Just pure play." />
-        <div className="mt-16 grid md:grid-cols-2 gap-6">
+        <div className="mt-10 sm:mt-16 grid md:grid-cols-2 gap-5 sm:gap-6">
           {plans.map((p) => (
             <div
               key={p.name}
-              className={`group relative rounded-2xl p-8 transition-all hover:-translate-y-2 ${
+              className={`group relative rounded-2xl p-6 sm:p-8 transition-all hover:-translate-y-2 ${
                 p.featured
                   ? "bg-[var(--gradient-card)] border border-[var(--neon-purple)]/40 shadow-[var(--shadow-glow-purple)]"
                   : "bg-card border border-border hover:border-[var(--neon-blue)]/50"
@@ -73,7 +73,7 @@ export function SectionHeader({ eyebrow, title, subtitle }: { eyebrow: string; t
         {eyebrow}
         <span className="w-8 h-px bg-[var(--neon-blue)]" />
       </div>
-      <h2 className="mt-4 text-4xl md:text-5xl font-black tracking-tight">{title}</h2>
+      <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-black tracking-tight">{title}</h2>
       {subtitle && <p className="mt-4 text-muted-foreground">{subtitle}</p>}
     </div>
   );
