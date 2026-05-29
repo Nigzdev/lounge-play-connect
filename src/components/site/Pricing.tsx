@@ -73,7 +73,7 @@ export function SectionHeader({ eyebrow, title, subtitle }: { eyebrow: string; t
         {eyebrow}
         <span className="w-8 h-px bg-[var(--neon-blue)]" />
       </div>
-      <h2 className="mt-4 text-4xl md:text-5xl font-black tracking-tight">{title}</h2>
+      <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-black tracking-tight">{title}</h2>
       {subtitle && <p className="mt-4 text-muted-foreground">{subtitle}</p>}
     </div>
   );
