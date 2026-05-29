@@ -17,10 +17,10 @@ const shots = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="relative py-24 px-5">
+    <section id="gallery" className="relative py-16 sm:py-24 px-4 sm:px-5">
       <div className="max-w-6xl mx-auto">
         <SectionHeader eyebrow="Gallery" title="A glimpse inside" subtitle="Step into the neon. Where every shot counts." />
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] md:auto-rows-[220px] gap-4">
+        <div className="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 auto-rows-[140px] sm:auto-rows-[180px] md:auto-rows-[220px] gap-3 sm:gap-4">
           {shots.map((s, i) => (
             <div key={i} className={`relative overflow-hidden rounded-2xl group border border-border ${s.span}`}>
               <img
